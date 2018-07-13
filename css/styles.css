@@ -1,0 +1,125 @@
+:root {
+    --main-color: rgb(61, 44, 243);
+
+}
+/* CSS reset http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126 License: none (public domain) */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* END of reset */
+
+body{
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 680px;
+    min-width: 450px;
+    margin: 20px auto 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+header > div {
+    color:blue
+}
+header > small {
+    color:dimgray;
+    font-size: 0.9em;
+    /* font-style: italic; */
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--main-color);
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+h2{
+    color:dimgray;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+main {
+    padding-right: 34px;
+}
+
+.content-item {
+    margin-bottom: 12px;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+footer {
+    color: grey;
+}
+footer a {
+    color: grey;
+    font-size: 0.8em;
+    margin-left: 20px;
+}
+
+/*************** Navigation *****************/
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9em;
+    background-color: rgb(230, 230, 230);
+    max-width: 630px; 
+}
+nav ul li {
+    float: left;   
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 6px 18px;   
+}
+nav ul li a:hover:not(.active) {
+    background-color: rgb(109, 103, 175);
+    color: white;   
+}
+nav ul li a.active {
+    background-color: var(--main-color); 
+    color: white; 
+    cursor: default;
+}
+@media screen and (max-width: 480px) {
+    nav ul li {
+        float: none;   
+    }
+}
