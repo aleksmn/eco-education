@@ -1,12 +1,14 @@
 body {
   font-size: 16px;
+
 }
 #main-content {
   position: absolute;
   z-index: 15;
   padding: 0 0 20px 20px;
   margin-left: 180px;
-  max-width: 1200px;
+  margin-right: 20px;
+  max-width: 1000px;
   min-width: 600px;
 }
 h1 {
@@ -31,4 +33,14 @@ nav li {
 }
 nav li a.active{
   font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+}
+
+td {
+  border: 1px solid rgb(209, 209, 209);
+  padding: 4px;
 }

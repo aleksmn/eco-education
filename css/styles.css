@@ -31,6 +31,11 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* END of reset */
 
 body{
